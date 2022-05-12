@@ -12,3 +12,5 @@ Tag.init({
     autoIncrement: true,
   },
 });
+
+module.exports = Tag;
