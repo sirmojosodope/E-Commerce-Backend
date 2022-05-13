@@ -1,16 +1,21 @@
+const { ProductTag } = require('./models');
+
+const producttagData = 
 [
     {
-      category_name: "Hoodies",
+      product_id: "Hoodies",
     },
     {
-      category_name: "T-Shirts",
+      product_id: "T-Shirts",
     },
     {
-      category_name: "Hats",
+      product_id: "Hats",
     },
     {
-      category_name: "Home",
+      product_id: "Home",
     },
   ];
   
-  
+  const seedProductTags = () => ProductTag.bulkcreate(producttagData);
+
+  module.exports = seedProductTags
